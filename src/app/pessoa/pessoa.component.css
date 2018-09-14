@@ -1,0 +1,26 @@
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+
+.datatable-header {
+    background: rgba(164, 192, 214,1);
+    padding: 1em 0 0 1em;
+ }
+
+ .datatable-header-cell {
+    font-size: 1.2em;
+    font-weight: bold;
+ }
+
+ .datatable-body-row {
+    padding: 0;
+ }
+
+ .datatable-row-even {
+    background: rgba(240, 240, 240, 1);
+ }
+
+ .datatable-row-odd {
+    background: rgba(255, 255, 255,1);
+ }
