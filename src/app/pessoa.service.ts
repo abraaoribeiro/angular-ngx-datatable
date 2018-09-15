@@ -7,9 +7,9 @@ export interface Conf{
 
 @Injectable()
 export class PessoaService {
-  /*pessoas = [
+  pessoas = [
      { nome: 'abraao', idade: '23', genero: 'M' },
-     { nome: 'abraao', idade: '20', gnero: 'M' },
+     { nome: 'abraao', idade: '20', genero: 'M' },
      { nome: 'abraao', idade: '21', genero: 'M' },
      { nome: 'abraao', idade: '20', genero: 'M' },
      { nome: 'abraao', idade: '20', genero: 'M' },
@@ -17,7 +17,7 @@ export class PessoaService {
      { nome: 'abraao', idade: '20', genero: 'M' },
    ];
   
-*/ 
+
 
   pessoa: string;
   //url_pessoas = 'assets/pessoas.json'
@@ -25,8 +25,8 @@ export class PessoaService {
   constructor(private httpClient: HttpClient) { }
 
   getPessoa() {
-    return this.httpClient.get<Conf>('assets/data/pessoas.json')
-    //return this.pessoas;
+   // return this.httpClient.get<Conf>('assets/data/pessoas.json')
+    return this.pessoas;
   }
 
  

@@ -15,13 +15,16 @@ public rows:any = [];
 public columns = [
   { prop: 'nome' },
   { name: 'Idade' },
-  { name: 'Gênero' }
+  { name: 'Genero' }
 ];
 
   ngOnInit() {
-    this.rows = this.servicePessoa.getPessoa().subscribe(data => {
-      this.config = data;
-    });
+   // this.rows = this.servicePessoa.getPessoa().subscribe(data => {
+     // this.config = data;
+    //});
+    this.rows = this.servicePessoa.getPessoa();
+
+
   }
 
   
